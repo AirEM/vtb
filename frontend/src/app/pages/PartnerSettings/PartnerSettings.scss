@@ -1,0 +1,43 @@
+
+.partner-settings {
+  padding-top: 86px;
+
+  &__back {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+
+  &__back-text {
+    font-size: 36px;
+    line-height: 45px;
+    margin-left: 26px;
+
+    color: #3E434E;
+  }
+
+  &__users {
+
+  }
+
+  &__upload {
+
+  }
+
+  &__upload-form {
+    max-width: 390px;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    color: #262626;
+  }
+}

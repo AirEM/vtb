@@ -1,0 +1,55 @@
+
+.dataset {
+  padding-top: 58px;
+  display: flex;
+
+  &__aside {
+    max-width: 245px;
+    justify-self: flex-end;
+
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__info {
+    font-size: 14px;
+    line-height: 18px;
+    color: #797979;
+  }
+
+  &__company {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #3E434E;
+
+    >svg {
+      margin-right: 14px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    color: #262626;
+    margin-bottom: 14px;
+  }
+
+  &__subtitle {
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-size: 26px;
+    line-height: 33px;
+
+    color: #262626;
+  }
+
+  &__list {
+    padding-left: 30px;
+  }
+}

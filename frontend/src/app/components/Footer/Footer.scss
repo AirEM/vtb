@@ -1,0 +1,28 @@
+$footer-height: 134px;
+
+.footer {
+  flex: 0 0 auto;
+  padding-bottom: 30px;
+
+  font-size: 13px;
+  line-height: 16px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__contacts {
+    padding-top: 23px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  &__contacts-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contacts-logo {
+    margin-right: 5px;
+  }
+}

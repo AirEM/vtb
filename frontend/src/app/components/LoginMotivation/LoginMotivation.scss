@@ -1,0 +1,23 @@
+
+.login-motivation {
+  max-width: 440px;
+  padding-top: 30px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    color: #0072ED;
+  }
+
+  &__img {
+    width: 440px;
+    margin: 30px 0;
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+  }
+}

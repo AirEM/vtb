@@ -1,0 +1,57 @@
+@import "common";
+
+@font-face {
+  font-family: 'Geometria';
+  src: local('Geometria'),
+  url('./fonts/Geometria.woff') format('woff'),
+  url('./fonts/Geometria.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: local('Geometria Bold'), local('Geometria-Bold'),
+  url('./fonts/Geometria-Bold.woff') format('woff'),
+  url('./fonts/Geometria-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html,
+body {
+  width: 100%;
+  line-height: 1.5;
+  font-family: 'Geometria', san-serif, serif;
+}
+
+body {
+  padding-top: $header-height;
+  background-color: $white;
+  //overflow-y: scroll;
+}
+
+body.fontLoaded {
+  font-family: 'Geometria', san-serif, serif;
+}
+
+p,
+label {
+  line-height: 1.5em;
+}
+
+input, select, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}

@@ -1,0 +1,37 @@
+@import "../../../styles/common";
+
+.header {
+  border-bottom: 1px solid #D3D7DF;
+  height: $header-height;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $white;
+  z-index: 2;
+
+  &__wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    box-sizing: content-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__account {
+    display: flex;
+    align-items: center;
+    color: #626F84;
+  }
+
+  &__settings-icon {
+    margin-right: 18px;
+  }
+
+  &__account-icon {
+    margin-right: 12px;
+  }
+}

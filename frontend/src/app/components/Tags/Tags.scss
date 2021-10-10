@@ -1,0 +1,22 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__tag {
+    padding: 1px 11px 3px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    color: #FFFFFF;
+
+    &_0 {
+      background-color: #1060BE;
+    }
+
+    &_1 {
+      background-color: #00A5FF;
+    }
+  }
+}

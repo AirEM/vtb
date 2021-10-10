@@ -1,0 +1,49 @@
+.login-form {
+  box-sizing: border-box;
+  padding: 33px 43px 33px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__content {
+    width: 100%;
+    flex: 1 0 auto;
+  }
+
+  &__footer {
+    flex: 0 0 auto;
+  }
+
+  &__help {
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    margin-top: 11px;
+  }
+
+  &__submit {
+    //color: #626F84 !important;
+    //height: 52px;
+    //background-color: #F0F2F5;
+    //
+    //>span {
+    //  //background-color: #F0F2F5;
+    //  color: #626F84;
+    //  border-radius: 4px;
+    //}
+    //
+    //>*{
+    //  color: #626F84;
+    //}
+  }
+
+  &__textarea {
+    font-family: inherit;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+  }
+}

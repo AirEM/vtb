@@ -1,0 +1,43 @@
+
+.user-item {
+  max-width: 430px;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+
+  &__info {
+    padding-left: 9px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 20px;
+    color: #262626;
+    font-weight: bold;
+  }
+
+  &__role {
+    font-size: 15px;
+    line-height: 19px;
+    color: #3E434E;
+  }
+
+  &__toolbar {
+    transition: .3s ease-in opacity;
+    margin-left: auto;
+    color: rgba(98, 111, 132, 0.57);
+    opacity: 0;
+
+    >* {
+      margin-left: 6px;
+    }
+  }
+
+  &:hover {
+    .user-item__toolbar {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+import {
+    Action,
+    configureStore,
+    getDefaultMiddleware,
+    StoreEnhancer,
+    ThunkDispatch
+} from '@reduxjs/toolkit'
+import { createInjectorsEnhancer } from 'redux-injectors'
+import createSagaMiddleware from 'redux-saga'
+import { history } from '../utils/history'
+
+import { createReducer, RootState } from './reducers'
+import { routerMiddleware } from 'connected-react-router'
+
+export type Dispatch = ThunkDispatch<RootState, undefined, Action>
+
+export function configureAppStore() {
+    const reduxSagaMonitorOptions = {}
+    const sagaMiddleware = createSagaMiddleware(reduxSagaMonitorOptions)
+    const { run: runSaga } = sagaMiddleware
+
+    // Create the store with saga middleware
+    const middlewares = [sagaMiddleware]
+
+    const enhancers = [
+        createInjectorsEnhancer({
+            createReducer,
+            runSaga
+        })
+    ] as StoreEnhancer[]
+
+    const store = configureStore({
+        reducer: createReducer(),
+        middleware: [
+            ...getDefaultMiddleware(),
+            routerMiddleware(history),
+            ...middlewares
+        ],
+        devTools:
+            /* istanbul ignore next line */
+            process.env.NODE_ENV !== 'production' ||
+            process.env.PUBLIC_URL.length > 0,
+        enhancers
+    })
+
+    return store
+}
